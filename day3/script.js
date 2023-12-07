@@ -177,10 +177,8 @@ function partOne() {
             } else {
                 if (number !== "") {
                     let surroundingChars = getSurroundingChars(rows, i, j - length, length);
-                    console.log(surroundingChars);
                     let symbols = surroundingChars.match(/[^0-9.]/g);
                     if (symbols) {
-                        console.log(number + " is a part number");
                         result += Number.parseInt(number);
                     }
                 }
@@ -191,10 +189,8 @@ function partOne() {
         }
         if (number !== "") {
             let surroundingChars = getSurroundingChars(rows, i, j - length, length);
-            console.log(surroundingChars);
             let symbols = surroundingChars.match(/[^0-9.]/g);
             if (symbols) {
-                console.log(number + " is a part number");
                 result += Number.parseInt(number);
             }
         }
@@ -282,7 +278,6 @@ function partTwo() {
             if (rows[i][j] === "*") {
                 let numbers = getAdjacentNums(rows, i, j);
                 if (numbers.length === 2) {
-                    console.log(numbers[0] + " and " + numbers[1] + " forms a gear");
                     result += numbers[0] * numbers[1];
                 }
             }

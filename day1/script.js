@@ -1,6 +1,5 @@
 function partOne(input) {
     console.log("Part one");
-    console.log(input);
     let rows = input.split("\n");
     let result = 0;
     rows.forEach((row) => {

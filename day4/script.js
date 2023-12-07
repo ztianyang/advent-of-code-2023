@@ -257,7 +257,6 @@ function partTwo() {
         }
         cardsWins.push(wins);
     }
-    console.log(cardsWins);
     let scratchcardsWon = [];
     for (let i = 0; i < cardsWins.length; i++) {
         scratchcardsWon.push(0);
@@ -271,7 +270,6 @@ function partTwo() {
             }
         }
     }
-    console.log(scratchcardsWon);
     result = scratchcardsWon.reduce((acc, current) => acc + current, 0);
     console.log("The total scratchcards won is " + result);
 }

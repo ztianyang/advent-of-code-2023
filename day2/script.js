@@ -124,7 +124,6 @@ function partOne(numRed, numGreen, numBlue) {
             }
         }
         if (meetsRequirements) {
-            console.log("Game " + gameID + " meets the requirements");
             result += gameID;
         }
     });
@@ -158,9 +157,7 @@ function partTwo() {
                 }
             }
         }
-        console.log(maxRed + " red, " + maxGreen + " green, " + maxBlue + " blue");
         power = maxRed * maxGreen * maxBlue;
-        console.log("Power: " + power);
         result += power;
     });
     console.log("The sum of the powers is " + result);
