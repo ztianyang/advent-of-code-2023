@@ -1,6 +1,9 @@
 function partOne(input) {
     console.log("Part one");
     let rows = input.split("\n");
+    if (rows[rows.length - 1] === "") {
+        rows.pop();
+    }
     let result = 0;
     rows.forEach((row) => {
         let digits = row.match(/[0-9]/g);
@@ -46,6 +49,9 @@ function wordsToNumbers(text) {
 function partTwo(input) {
     console.log("Part two");
     let rows = input.split("\n");
+    if (rows[rows.length - 1] === "") {
+        rows.pop();
+    }
     rows = rows.map((row) => wordsToNumbers(row));
     let result = 0;
     rows.forEach((row) => {

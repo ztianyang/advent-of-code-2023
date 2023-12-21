@@ -1,6 +1,9 @@
 function partOne(input) {
     console.log("Part one");
     let rows = input.split("\n");
+    if (rows[rows.length - 1] === "") {
+        rows.pop();
+    }
     let result = 0;
     let numRed = 12;
     let numGreen = 13;
@@ -35,6 +38,9 @@ function partOne(input) {
 function partTwo(input) {
     console.log("Part two");
     let rows = input.split("\n");
+    if (rows[rows.length - 1] === "") {
+        rows.pop();
+    }
     let result = 0;
     rows.forEach((row) => {
         let sets = row.split(": ")[1].split("; ");
