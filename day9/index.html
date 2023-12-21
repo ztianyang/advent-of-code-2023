@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advent of Code Day 9</title>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <h1>Advent of Code Day 9</h1>
+        <p>Open JavaScript console for output</p>
+        <div>
+            <label for="input">Input: </label>
+            <textarea id="input" name="input"></textarea>
+        </div>
+        <div>
+            <button id="part-one">Part 1</button>
+            <button id="part-two">Part 2</button>
+        </div>
+        <script>
+            let inputText = document.querySelector("#input");
+            let partOneButton = document.querySelector("#part-one");
+            let partTwoButton = document.querySelector("#part-two");
+            partOneButton.addEventListener("click", () => {
+                partOne(inputText.value);
+            });
+            partTwoButton.addEventListener("click", () => {
+                partTwo(inputText.value);
+            });
+        </script>
+    </body>
+</html>
